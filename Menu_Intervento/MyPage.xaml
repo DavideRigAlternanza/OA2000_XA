@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="test.MyPage">
+	<StackLayout BackgroundColor="#d2d2d2">
+      <StackLayout.Children>
+       
+
+        <Label 
+               Text="Menù Intervento"
+               FontSize="Large"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand" 
+
+				BackgroundColor="#d2d2d2"
+			   TextColor="Red"/>
+		
+
+				
+			<ScrollView>		
+			<Grid>
+					<!-- CLIENTE -->
+					<Label 
+						Text="Cliente: "
+		           		Grid.Row="0" Grid.Column="0"
+		           		TextColor="Black"
+						Font="Bold"
+		           		BackgroundColor="#d2d2d2" />
+		           <Entry
+						Grid.Row="1" Grid.Column="0"
+						Grid.ColumnSpan="2"/>
+
+					<!-- IMPIANTO -->
+					<Label 
+						Text="Impianto: "
+		           		Grid.Row="2" Grid.Column="0"
+		           		TextColor="Black"
+						Font="Bold"
+		           		BackgroundColor="#d2d2d2" />
+		           <Entry
+						Grid.Row="3" Grid.Column="0"
+						Grid.ColumnSpan="2"/>
+
+					<!-- COMMESSA -->
+					<Label 
+						Text="Commessa: "
+		           		Grid.Row="4" Grid.Column="0"
+		           		TextColor="Black"
+						Font="Bold"
+		           		BackgroundColor="#d2d2d2" />
+		           <Entry
+						Grid.Row="5" Grid.Column="0"
+						Grid.ColumnSpan="2"/>
+
+					<!-- DESCRIZIONE -->
+					<Label 
+						Text="Descrizione: "
+		           		Grid.Row="6" Grid.Column="0"
+		           		TextColor="Black"
+						Font="Bold"
+		           		BackgroundColor="#d2d2d2" />
+		           <Entry
+						Grid.Row="7" Grid.Column="0"
+						Grid.ColumnSpan="2"/>
+
+					<!-- LUOGO DI INTERVENTO -->
+					<Label 
+						Text="Luogo di intervento: "
+		           		Grid.Row="8" Grid.Column="0"
+		           		TextColor="Black"
+						Font="Bold"
+		           		BackgroundColor="#d2d2d2" />
+					<Image Source="icona.jpeg" Grid.Row="9" Grid.Column="0" />
+					<Button
+						Grid.Row="9" Grid.Column="0"
+						Image = "./icona.jpeg"
+					/>
+		           <Entry
+						Grid.Row="9" Grid.Column="1"/>
+
+					<!-- ESECUZIONE INTERVENTO -->
+					<Label 
+						Text="Esecuzione intervento: "
+		           		Grid.Row="10" Grid.Column="0"
+		           		TextColor="Black"
+						Font="Bold"
+		           		BackgroundColor="#d2d2d2" />
+		           <Entry
+						Grid.Row="11" Grid.Column="0"
+						Grid.ColumnSpan="2"/>
+
+					<!-- VOCI E ARTICOLI -->
+					<Label 
+						Text="Voci e articoli: "
+		           		Grid.Row="12" Grid.Column="0"
+		           		TextColor="Black"
+						Font="Bold"
+		           		BackgroundColor="#d2d2d2" />
+		           <Entry
+						Grid.Row="13" Grid.Column="0"
+						Grid.ColumnSpan="2"/>
+
+					<!-- ALLEGATI -->
+					<Label 
+						Text="Allegati: "
+		           		Grid.Row="14" Grid.Column="0"
+		           		TextColor="Black"
+						Font="Bold"
+		           		BackgroundColor="#d2d2d2" />
+		           <Entry
+						Grid.Row="15" Grid.Column="0"
+						Grid.ColumnSpan="2"/>
+
+					<!-- CONTATTI -->
+					<Label 
+						Text="Contatti: "
+		           		Grid.Row="16" Grid.Column="0"
+		           		TextColor="Black"
+						Font="Bold"
+		           		BackgroundColor="#d2d2d2" />
+		           <Entry
+						Grid.Row="17" Grid.Column="0"
+						Grid.ColumnSpan="2"/>
+			</Grid>	
+		</ScrollView>
+
+		<Grid>	
+	        <Button Text="Eseguito"
+	                Grid.Row="0" Grid.Column="1"
+	                 />
+			<Button Text="Indietro"
+	                Grid.Row="0" Grid.Column="0"
+	                 />
+		</Grid>
+			
+      </StackLayout.Children>
+    </StackLayout>
+</ContentPage>
